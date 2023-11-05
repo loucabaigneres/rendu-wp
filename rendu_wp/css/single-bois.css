@@ -1,0 +1,117 @@
+.bois-template-default .site-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 120px;
+}
+
+.bois-template-default .page-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bois-template-default .page-header h1 {
+    font-size: 36px;
+}
+
+.bois-template-default .page-header h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.bois-template-default .product-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.bois-template-default .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.bois-template-default .product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bois-template-default .product-content h3 {
+    font-size: 24px;
+}
+
+.bois-template-default .product-content > p {
+    text-align: justify;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.bois-template-default .more-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bois-template-default .more-details .quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.bois-template-default .more-details .quantity .quantity-input {
+    display: flex;
+    border: 1px solid black;
+}
+
+.bois-template-default .more-details .quantity input[type="number"] {
+    width: 36px;
+    height: 36px;
+    appearance: textfield;
+    -moz-appearance: textfield;
+    text-align: center;
+    border: none;
+}
+
+.bois-template-default .more-details .quantity input[type="button"] {
+    width: 24px;
+    height: 36px;
+    border-radius: 0;
+    border: none;
+    background-color: #4a5e81;
+    color: white;
+}
+
+.bois-template-default .more-details .quantity input {
+}
+
+.bois-template-default .more-details button {
+    background-color: #4a5e81;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.bois-template-default .site-main > p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .bois-template-default .site-main {
+        padding: 32px 24px;
+    }
+
+    .bois-template-default .page-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .bois-template-default .product-description {
+        grid-template-columns: 1fr;
+    }
+}
